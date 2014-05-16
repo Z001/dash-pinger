@@ -11,7 +11,7 @@ def pinger_urllib(host):
     with open("test.txt", "a") as myfile:
       myfile.write("\n")
       myfile.write(st)
-      return "nahidi))"
+      return st
   else:
     return (time.time() - t1) * 1000.0
   
@@ -19,5 +19,6 @@ def pinger_urllib(host):
 host = str(raw_input('host: '))
 
 while True:
-  time.sleep(5)
   print pinger_urllib(host)
+  time.sleep(60)
+  
